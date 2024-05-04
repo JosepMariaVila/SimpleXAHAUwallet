@@ -4,7 +4,7 @@ Step by step guide to use the code:
 
 1) Create an empty folder in your desktop and name it as you like.
 
-2) Download the 4 files I have in this project to the previous folder.
+2) Download the 4 files I have in this project to that folder.
 
 3) Open the HTML file in your browser.
 
