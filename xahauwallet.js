@@ -72,21 +72,23 @@ async function getAccountsFromSeeds() {
   results += "\nConnected.\n";
   standbyResultField.value = results;
 
-  // -------------------------------------------------Find the test account wallets.
-  var lines = seeds.value.split("\n");
-  const standby_wallet = xrpl.Wallet.fromSeed(lines[0]);
+  try {
+    // -------------------------------------------------Find the test account wallets.
+    const standby_wallet = xrpl.Wallet.fromSeed(seeds.value);
 
-  // -------------------------------------------------------Get the current balance.
-  const standby_balance = await client.getXrpBalance(standby_wallet.address);
+    // -------------------------------------------------------Get the current balance.
+    const standby_balance = await client.getXrpBalance(standby_wallet.address);
 
-  // ----------------------Populate the fields for Standby account.
-  standbyAccountField.value = standby_wallet.address;
-  standbySeedField.value = standby_wallet.seed;
-  standbyBalanceField.value = await client.getXrpBalance(
-    standby_wallet.address
-  );
-  standbyAmountField.value = "";
-  standbyDestinationField.value = "";
+    // ----------------------Populate the fields for Standby account.
+    standbyAccountField.value = standby_wallet.address;
+    standbySeedField.value = standby_wallet.seed;
+    standbyBalanceField.value = standby_balance;
+    standbyAmountField.value = "";
+    standbyDestinationField.value = "";
+  } catch (err) {
+    console.log("Error submitting transaction:", err);
+    standbyResultField.value = err;
+  }
 
   client.disconnect();
 } // End of getAccountsFromSeeds()
