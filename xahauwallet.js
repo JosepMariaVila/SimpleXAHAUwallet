@@ -33,7 +33,7 @@ async function getSome() {
     data.address +
     "\nSeed: " +
     data.secret +
-    "\nXRP: " +
+    "\nXAH: " +
     data.xrp +
     "\nHash: " +
     data.hash +
@@ -86,7 +86,7 @@ async function getAccountsFromSeeds() {
     standbyAmountField.value = "";
     standbyDestinationField.value = "";
   } catch (err) {
-    console.log("Error submitting transaction:", err);
+    console.log("Error submitting transaction: ", err);
     standbyResultField.value = err;
   }
 
@@ -94,7 +94,7 @@ async function getAccountsFromSeeds() {
 } // End of getAccountsFromSeeds()
 
 // *******************************************************
-// ******************** Send XAHAU *************************
+// ******************** Send XAH *************************
 // *******************************************************
 
 async function sendXAHAU() {
@@ -105,7 +105,7 @@ async function sendXAHAU() {
   const client = new xrpl.Client(net);
   await client.connect();
 
-  results += "\nConnected. Sending XAHAU...";
+  results += "\nConnected. Sending XAH...";
   standbyResultField.value = results;
 
   const standby_wallet = xrpl.Wallet.fromSeed(standbySeedField.value);
