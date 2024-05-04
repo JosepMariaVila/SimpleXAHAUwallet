@@ -1,14 +1,10 @@
-A simple javascript XAHAU wallet to check the balance, send XAH, create new mainnet accounts offline and create testnet funded accounts.
-
-It uses the xrpl.js library.
-
-Use Node.js and VisualStudioCode to set up the project (or any similar tool). 
+A simple javascript XAHAU wallet to check the balance, send XAH, create new mainnet accounts offline and create testnet funded accounts. It uses the xrpl.js library.
 
 Step by step guide to use the code:
 
 1) Create an empty folder in your desktop and name it as you like.
 
-2) Download the 4 files I have in this project and put them in that folder
+2) Download the 4 files I have in this project and to the previous folder.
 
 3) Open the HTML file in your browser.
 
