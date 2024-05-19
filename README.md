@@ -2,9 +2,9 @@ A simple javascript XAHAU wallet to check the balance, send XAH, create new main
 
 It uses a seed to derive the account address and sign transactions, 2 options are possible:
 
-Option A: 29 characters seeds (suNq9PQrYKEifmLdFs9NPjdLeyMKm) which correspond to the secp256k1 algorithm.
+Option A: 29 characters seeds (suNq9PQrYKEifmLdFs9NPjdLeyMKm) which usually corresponds to the secp256k1 algorithm.
 
-Option B: 31 characters seeds (sKdNVBLAmVjgcDrEfDSzTSBqsagHMEd) which correspond to the ed25519 algorithm.
+Option B: 31 characters seeds (sKdNVBLAmVjgcDrEfDSzTSBqsagHMEd) which usually corresponds to the ed25519 algorithm.
 
 Step by step guide to use the code:
 
