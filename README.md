@@ -22,4 +22,4 @@ Step by step guide to use the code:
 
 7) It allows to send XAH. Warning: if you sign and send a transaction using the same computer, as it has internet conection, we can consider the private key compromised once broadcasted the transaction. So, each time you send XAH using this wallet you should generate a new keyparir using a computer that never is connected to the internet and send your XAH there.
 
-Try the demo online here: https://skunk-proper-smoothly.ngrok-free.app/tools/simpleXAHAUwallet/xahauwallet
+Demo online just for educational purposes here: https://skunk-proper-smoothly.ngrok-free.app/tools/simpleXAHAUwallet/xahauwallet
