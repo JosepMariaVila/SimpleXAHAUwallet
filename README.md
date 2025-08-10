@@ -1,10 +1,10 @@
-A simple javascript XAHAU wallet to check balances, send XAH, create new mainnet accounts offline and create testnet funded accounts. It uses the xrpl.js library.
+A simple javascript XAHAU wallet to check balances, send XAH, create new mainnet accounts offline, create testnet funded accounts, check balances and send XAH. It uses the xrpl.js library.
 
-It uses a seed to derive the account address and sign transactions, 2 options are possible:
+It uses a seed to derive the account address and sign transactions
 
-Option A: 29 characters seeds (suNq9PQrYKEifmLdFs9NPjdLeyMKm) which usually corresponds to the secp256k1 algorithm.
+Testnet accounts use the secp256k1 algorithm, which generates a 29 characters seed.
 
-Option B: 31 characters seeds (sKdNVBLAmVjgcDrEfDSzTSBqsagHMEd) which usually corresponds to the ed25519 algorithm.
+Mainnet accounts use the ed25519 algorithm, which generates a 31 characters seed.
 
 Step by step guide to use the code:
 
