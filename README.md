@@ -12,15 +12,13 @@ Step by step guide to use the code:
 
 2) Download the 6 files I have in this project to that folder (or just download the folder and unzip it).
 
-3) Open the HTML file in your browser.
+3) Open the HTML file in your browser (xahauwallet.html).
 
 4) Select the network. It works for Mainnet and Testnet.
 
-5) It allows to create a Mainnet account (which has to be activated later with XAH). Do it offline, it's purely mathematical.
+5) Click on "or create a Mainnet account" to create a Mainnet account (which has to be activated later with XAH). Do it offline, it's purely mathematical.
 
-6) It allows to create a Testnet funded account from the faucet. You can do it online as it's just testnet XAH.
+6) Click on "or create a Testnet account" to create a Testnet funded account with 1000 XAH from the faucet. You have to do it online as internet connection is needes, it isn't real XAH.
 
-7) It allows to send XAH. Warning: if you sign and send a transaction using the same computer, as it has internet conection, we can consider the private key compromised once broadcasted the transaction. So, each time you send XAH using this wallet you should generate a new keyparir using a computer that never is connected to the internet and send your XAH there.
+7) The wallet allows to send XAH. 
 
-Demo online just for educational purposes here: 
-https://skunk-proper-smoothly.ngrok-free.app/tools/simpleXAHAUwallet/xahauwallet
